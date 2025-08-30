@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Guia de HTML e CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <nav>
+        <h2>Guia rapido</h2>
+        <ul>
+          <li><a href="#html-tags">Tags HTML</a></li>
+          <li><a href="#css-layouts">Layout CSS</a></li>
+        </ul>
+      </nav>
+      
+      <!---CONTEUDO--->
+      <main>
+        <section id="html-tags">
+          <h2>principais tags HTML</h2>
+          <p> O html possui varias tags importantes, aqui estão algumas: </p>
+          <ul>
+            <li><code> &lt;h1&gt;...&lt;/h1&gt;</code> titulos, do <code>h1</code> ao <code> h6</code></li>
+            <li><code> &lt;p&gt;</code> - paragrafo de texto</li>
+            <li><code> &lt;a href="image.jpg"&gt;</code> - links</li>
+            <li><code> &lt;ul&gt; &lt;li&gt;</code> - listas não ordenadas</li>
+            <li><code> &lt;ol&gt; &lt;li&gt;</code> - listas ordenadas</li>
+            <li><code>&lt; table &gt;</code> - tabelas</li>
+            <li><code>&lt;form&gt; </code> - formulario</li>
+            <li><code> &lt;div&gt; </code> - containers genericos</li>
+            <li><code>&lt;span&gt;</code> - container inline</li>
+          </ul>
+        </section>
+        <section id="css-layouts">
+          <h2>Principais layouts em CSS</h2>
+          <p> com CSS você pode organizar os elementos com diferentes formas:</p>
+          <ul>
+            <li><b>Box Mode</b> - toda tag e uma caixa com <code>margin</code>
+            <code>border</code>, <code>padding</code> e <code>content</code></li>
+            <li><b>Flexbox</b> - permite criar layouts flexiveis em linha ou coluna.</li>
+            <li><b>CSS Grid</b> - layout baseados em grandes bidimensionais.</li>
+            <li><b>Position </b> - define a posição (static, relative, absolute, find, sticky)</li>
+            <li><b>float</b> - metodo antigo de alinhar os elementos</li>
+            
+          </ul>
+          
+          <h1>exemplos de Flexbox</h1>
+          <pre>
+            .container {
+              display: flex;
+              justify-content: space-between;
+              aling-items> center;
+            }
+          </pre>
+          
+          <h2>exemplo grid</h2>
+          <pre>
+            .container {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 10px;
+            }
+          </pre>
+        </section>
+      </main>
+      
+      <script src="script.js"></script>
+  </body>
+</html>
